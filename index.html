@@ -8,13 +8,40 @@
     <style>
         header {
             text-align: center;
-            padding: 15px;
+            padding: 15px 0px;
             color:#fff;
-            background-color:rgb(74, 59, 110)
+            background-color:rgb(74, 59, 110);
+            position:fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: .8;
             /*background-image: url(https://cdn.discordapp.com/attachments/1072390774089580615/1120777352054575124/image.png);*/
         }
+            header a {
+            color:#fff;
+            text-decoration: none;
+            }
+
+        .menu-main {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
         nav {
-            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+            nav a {
+                padding: 10px 15px;
+            }
+            nav ul {
+                list-style-type: none;
+            }
+        #kys {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         main {
             font-size: large;
@@ -46,29 +73,41 @@
             font-size: smaller;
             background-color: rgb(74,59,110);
             text-align:center;
-            padding: 15px;
+            padding:0;
         }
     </style>
 
     <body>
-    <header><h1>Basic Computer Shii</h1>
+    <header>
+        <a href="index.html"><h1>Basic Computer Shii</h1></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="#pc-parts">Parts</a>
             <a href="#summary">Summary</a>
             <a>Recs</a>
-            <a href="https://frame.work/">The Fully Customizable Laptop I Would Give Up My First Born Child For</a>
+            <a id="more">More</a>
+                <ul class="sub-menu">
+                    <li><a id="framework" href="https://frame.work/">The Fully Customizable Laptop I Would Give Up My First Born Child For</a></li>
+                </ul>
         </nav>
     </header>
 
+    <div class="menu-main">
+        <!--<img id="menu-button" source="https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png" alt="menu button">
+        -->
+    </div>
+
+    <div class="menu-bar">
+
+    </div>
     <main>
-        <h2 id="contents">Contents</h2>
+        <!--<h2 id="contents">Contents</h2>
             <ol>
                 <li><a href="#intro">Intro duck shin</a></li>
                 <li><a href="#things-to-consider">Things to consider</a></li>
                 <li><a href="#pc-parts">PC Parts</a></li>
-            </ol>
-            <img src="https://media.tenor.com/LIp9JxamyBkAAAAd/kys-keep-yourself-safe.gif" alt="kys" width="500" height="200">
+            </ol>-->
+            <img id ="kys" src="https://media.tenor.com/LIp9JxamyBkAAAAd/kys-keep-yourself-safe.gif" alt="kys" width="1200" height="400">
 
         <h2 id="intro">Intro duck shin</h2>
             <p>I see you're in the market for a college laptop. I did all the research and nerdy shit so you don't have to.</p>
@@ -80,7 +119,7 @@
                     <p>Some activities like photo/video editing, 3D rendering and modeling, and pro Fortnite gaming are demanding tasks that may require heftier specifications compared to those of more casual users. The quality and capabilities of these tasks son muy importante para algunos, but may not be necessary for others.</p>
                     <p>If this isn't for you, that's cutesie patootsie and we don't needa worry ab that. You'll prob be fine using <em>integrated graphics</em> I'll explain that <a href="#gpu">here</a> if you care enough, but its cool if u don't :p</p></li>
                 <li><strong>Performance: </strong> General speed, loading times, workload<br>
-                    <p>So for all ur future college shii—homework (hopefully), streaming, general browsing, pro fortnite gaming, etc.—ur gonna want a pc that can run all these tasks quickly and efficiently, esp if you're the typa bitch to have 50 tabs, a music player, and a netflix show u told ur friends u would catch up on running in the background all at once. I'll also get into what to look for <a href="#ram">here</a>></p></li>
+                    <p>So for all ur future college shii—homework (hopefully), streaming, general browsing, pro fortnite gaming, etc.—ur gonna want a pc that can run all these tasks quickly and efficiently, esp if you're the typa bitch to have 50 tabs, a music player, and a netflix show u told ur friends u would catch up on running in the background all at once. I'll also get into what to look for <a href="#ram">here</a></p></li>
                 <li><strong>Longevity:</strong> Usage over the next four...or however many years of hell ur looking forward to<br>
                     <p>Ideally you prob want ur laptop to last for a few years, so get ur shii from reputable companies, review warranties, and get components that are either replaceable (like batteries and <a href="#storage">storage</a>) or built to last</p></li>
                 <li><strong>Budget: </strong>For ur broke college student ass</li>
