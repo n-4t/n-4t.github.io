@@ -6,18 +6,60 @@
     </head>
 
     <style>
-        
+        header {
+            text-align: center;
+            padding: 15px;
+            color:#fff;
+            background-color:rgb(74, 59, 110)
+            /*background-image: url(https://cdn.discordapp.com/attachments/1072390774089580615/1120777352054575124/image.png);*/
+        }
+        nav {
+            padding-bottom: 10px;
+        }
+        main {
+            font-size: large;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 90px;
+        }
+        h2 {
+            margin-top: 75px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: medium;
+            border: 1px solid #a0a0a0;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: rgb(205, 223, 255);
+        }
+        .footnote {
+            font-size: 0.8em;
+            color:gray;
+        }
+        footer {
+            color:#fff;
+            font-size: smaller;
+            background-color: rgb(74,59,110);
+            text-align:center;
+            padding: 15px;
+        }
     </style>
 
     <body>
-    <header><h1>Basic Computer Shii</h1></header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a>Parts</a>
-        <a>Recs</a>
-        <a href="https://frame.work/">The Fully Customizable Laptop I Would Give Up My First Born Child For</a>
-    </nav>
+    <header><h1>Basic Computer Shii</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#pc-parts">Parts</a>
+            <a href="#summary">Summary</a>
+            <a>Recs</a>
+            <a href="https://frame.work/">The Fully Customizable Laptop I Would Give Up My First Born Child For</a>
+        </nav>
+    </header>
 
     <main>
         <h2 id="contents">Contents</h2>
@@ -38,7 +80,7 @@
                     <p>Some activities like photo/video editing, 3D rendering and modeling, and pro Fortnite gaming are demanding tasks that may require heftier specifications compared to those of more casual users. The quality and capabilities of these tasks son muy importante para algunos, but may not be necessary for others.</p>
                     <p>If this isn't for you, that's cutesie patootsie and we don't needa worry ab that. You'll prob be fine using <em>integrated graphics</em> I'll explain that <a href="#gpu">here</a> if you care enough, but its cool if u don't :p</p></li>
                 <li><strong>Performance: </strong> General speed, loading times, workload<br>
-                    <p>So for all ur future college shii—homework (hopefully), streaming, general browsing, pro fortnite gaming, etc.—ur gonna want a pc that can run all these tasks quickly and efficiently, esp if you're the typa bitch to have 50 tabs, a music player, and a netflix show u told ur friends u would catch up on running in the background all at once. I'll also get into what to look for <!--linkt to pc parts sex shin, specifically cpu ram and storage-->here</p></li>
+                    <p>So for all ur future college shii—homework (hopefully), streaming, general browsing, pro fortnite gaming, etc.—ur gonna want a pc that can run all these tasks quickly and efficiently, esp if you're the typa bitch to have 50 tabs, a music player, and a netflix show u told ur friends u would catch up on running in the background all at once. I'll also get into what to look for <a href="#ram">here</a>></p></li>
                 <li><strong>Longevity:</strong> Usage over the next four...or however many years of hell ur looking forward to<br>
                     <p>Ideally you prob want ur laptop to last for a few years, so get ur shii from reputable companies, review warranties, and get components that are either replaceable (like batteries and <a href="#storage">storage</a>) or built to last</p></li>
                 <li><strong>Budget: </strong>For ur broke college student ass</li>
@@ -51,7 +93,7 @@
                             <li>2 in 1 — a laptop that can act like a tablet, for the artists and the iPad kids</li>
                             <li>touchscreen — a preference and convenience</li>
                             <li>biometrics — fingerprints, face id, and maybe a retina scanner to make things quick and secure</li>
-                            <li>peripherals — mouse, keyboard, monitor, speakers, headphones and all that. may or may not need a 3.5mm jack for headphones and speakers, and make sure the laptop has enough usb type A or type C ports for the extra shii. if u have no idea what i just said, click <!--make clickable info about ports, usbm, 3.5mm, charging, maybe hdmi, ethernet, etc-->here</li>
+                            <li>peripherals — mouse, keyboard, monitor, speakers, headphones and all that. may or may not need a 3.5mm jack for headphones and speakers, and make sure the laptop has enough usb type A or type C ports for the extra shii. if u have no idea what i just said, click <a href="https://www.indeed.com/career-advice/career-development/types-of-computer-ports">here</a></li>
                         </ul>
             </ul>
         
@@ -93,7 +135,7 @@
                             <td>M2</td>
                         </tr>
                     </table>
-                        <!--make this tiny--><p id="cpu-footnote"><strong>Note: </strong> This table is a general rule of thumb, NOT a definitive hierarchy. One outlier is a certain i5-1300 series chip that's even more powerful than some i9's. And tbh the M2 chip is only slightly better than the M1 I just didn't wanna make more table rows</p>
+                        <p class="footnote"><strong>Note: </strong> This table is a general rule of thumb, NOT a definitive hierarchy. One outlier is a certain i5-1300 series chip that's even more powerful than some i9's. And tbh the M2 chip is only slightly better than the M1 I just didn't wanna make more table rows</p>
                         <p>It's also worth paying attention to the <em>generation</em> of the CPU, which can be found as the first two numbers following the hyphen in Intel chips or the first number following the AMD identifier.</p>
                             <!--tab this in--><p id="cpu-gen-ex">Intel Core i7-<strong>12</strong>00H, 12th gen<br>AMD Ryzen 7 <strong>6</strong>800H, 6th gen</p>
                         <p>As usual, the higher the generation the better. I highly recommend gen 11 and above for Intel and gen 5 and above for AMD.</p>
@@ -105,27 +147,27 @@
                     <tr>
                         <th>Level</th>
                         <th>Type</th>
-                        <th>~Read,Write Speeds (Mb/s)</th>
+                        <th>Read, Write (Mb/s)</th>
                     </tr>
                     <tr>
                         <td>Decent</td>
                         <td>SATA</td>
-                        <td>550,550</td>
+                        <td>550, 550</td>
                     </tr>
                     <tr>
                         <td><em>Solid</em>...get it?</td>
                         <td>NVMe with PCIe 3.0</td>
-                        <td>3500,3500</td>
+                        <td>3500, 3500</td>
                     </tr>
                     <tr>
                         <td>Goated</td>
                         <td>NVMe with PCIe 4.0</td>
-                        <td>7000,6500</td>
+                        <td>7000, 6500</td>
                     </tr>
                     <tr>
                         <td>Victory Royale</td>
                         <td>NVMe with PCIe 5.0</td>
-                        <td>12500,10000</td>
+                        <td>12500, 10000</td>
                     </tr>
                 </table>
                 <p>Long story short, look for NVMe and PCIe and everything will load and download quickly.</p>
@@ -161,9 +203,13 @@
             <h3 id="gpu">Graphics</h3>
                 <p>If you have no idea what a graphics card is, don't worry, you prob don't need to, your <em>integrated graphics</em> will be just fine for ur college endeavors. But you fs won't be able to run Fortnite smoothly on your new laptop. If you aren't getting a Mac and want Fortnite to run a little more smoothly (or know you'll be doing something with 3D modeling, photo/video editing, or digital art), look for the words Nvidia RTX (or GTX on the lower end), or the words Radeon RX. These are <em>graphics processing units</em>, or GPUs. As usual, the higher the numbers that follow, the better...most of the time<br>
                     But if you are getting a Mac, the more cores the better. And you can prob run Fortnite on it at a decent graphics level and framerate.</p>
+
+            <h3 id="summary">Quick Summary</h3>
+                <p><strong>minimum specs: </strong>i5/Ryzen 5, 256 GB NVMe PCIe 3.0, 8 GB DDR4</p>
+                <p>Higher numbers for pretty much everything are usually better but more expensive</p>
     </main>
 
-    <footer>ik this website ugly as shit but tbf i literally coded the whole thing from scratch in like 2 weeks like ion do that easy prebuilt website maker pussy shit ya feel me? i got absolutely nothing better to do in my free time i need actual normal hobbies and shit and maybe a job or im gonna kms (<strong>k</strong>ill that <strong>m</strong>f <strong>s</strong>am)</footer>
+    <footer>®not a real Copyright 2023<br>ik this website ugly as shit but tbf i literally coded the whole thing from scratch in like 2 weeks like ion do that easy prebuilt website maker pussy shit ya feel me? i got absolutely nothing better to do in my free time i need actual normal hobbies and shit and maybe a job or im gonna kms (<strong>k</strong>ill that <strong>m</strong>f <strong>s</strong>am)</footer>
     
     </body>
 </html>
