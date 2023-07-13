@@ -33,23 +33,52 @@
             margin-top: 10px;
         }
             nav a {
-                padding: 10px 15px;
+                padding: 8px 15px;
+            }
+            nav a:hover {
+                background-color: rgb(133, 104, 199);
             }
             nav ul {
                 list-style-type: none;
+            }
+        .dropdown {
+            margin-top: 12px;
+        }
+        #more-stuff {
+            padding: 5px 15px;
+        }
+            .dropdown:hover #more-stuff {
+                background-color: rgb(133, 104, 199);
+            }
+            .dropdown:hover .sub-menu {
+                display: block;
+                /*margin-bottom: -15px;*/
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sub-menu {
+            display: none;
+                position: static;
+                margin-top: 15px;
+                padding: 5px;
+            }
+            .extra:hover {
+                background-color: rgb(133, 104, 199);
+                padding: 1%;
             }
         #kys {
             display: block;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 50px;
         }
         main {
             font-size: large;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 90px;
+            margin: 200px 300px;
         }
         h2 {
-            margin-top: 75px;
+            margin-top: 150px;
         }
         table {
             border-collapse: collapse;
@@ -84,12 +113,14 @@
             <a href="index.html">Home</a>
             <a href="#pc-parts">Parts</a>
             <a href="#summary">Summary</a>
-            <a>Recs</a>
-            <a id="more">More</a>
-                <ul class="sub-menu">
-                    <li><a id="framework" href="https://frame.work/">The Fully Customizable Laptop I Would Give Up My First Born Child For</a></li>
-                </ul>
+            <a href="#recs">Recs</a>
         </nav>
+        <div class="dropdown">
+            <a id="more-stuff" href="#more">More</a>
+                <ul class="sub-menu">
+                    <li><a class="extra" href="https://frame.work/">The Fully Customizable Laptop I Would Give Up My First Born Child For</a></li>
+                </ul>
+        </div>
     </header>
 
     <div class="menu-main">
@@ -109,7 +140,7 @@
             </ol>-->
             <img id ="kys" src="https://media.tenor.com/LIp9JxamyBkAAAAd/kys-keep-yourself-safe.gif" alt="kys" width="1200" height="400">
 
-        <h2 id="intro">Intro duck shin</h2>
+        <h2 id="intro">Inch row duck shin</h2>
             <p>I see you're in the market for a college laptop. I did all the research and nerdy shit so you don't have to.</p>
 
         <h2 id="things-to-consider">Things to consider</h2>
@@ -117,7 +148,7 @@
             <ul>
                 <li><strong>Purpose:</strong> What do you plan on doing with your computer?<br>
                     <p>Some activities like photo/video editing, 3D rendering and modeling, and pro Fortnite gaming are demanding tasks that may require heftier specifications compared to those of more casual users. The quality and capabilities of these tasks son muy importante para algunos, but may not be necessary for others.</p>
-                    <p>If this isn't for you, that's cutesie patootsie and we don't needa worry ab that. You'll prob be fine using <em>integrated graphics</em> I'll explain that <a href="#gpu">here</a> if you care enough, but its cool if u don't :p</p></li>
+                    <p>If this isn't for you, that's cutesie patootsie and we don't needa worry ab that. You'll prob be fine using <em>integrated graphics</em> I'll explain that <a href="#gpu">here</a> if you care enough, but it's cool if u don't :p</p></li>
                 <li><strong>Performance: </strong> General speed, loading times, workload<br>
                     <p>So for all ur future college shii—homework (hopefully), streaming, general browsing, pro fortnite gaming, etc.—ur gonna want a pc that can run all these tasks quickly and efficiently, esp if you're the typa bitch to have 50 tabs, a music player, and a netflix show u told ur friends u would catch up on running in the background all at once. I'll also get into what to look for <a href="#ram">here</a></p></li>
                 <li><strong>Longevity:</strong> Usage over the next four...or however many years of hell ur looking forward to<br>
@@ -129,9 +160,9 @@
                 <li><strong>Special Features: </strong>Stuff u may or may not need</li>
                     <h4>A quick little list of extra stuff u might want:</h4>
                         <ul>
-                            <li>2 in 1 — a laptop that can act like a tablet, for the artists and the iPad kids</li>
+                            <li>2 in 1 — a laptop that can fold like a tablet, for the artists and the iPad kids</li>
                             <li>touchscreen — a preference and convenience</li>
-                            <li>biometrics — fingerprints, face id, and maybe a retina scanner to make things quick and secure</li>
+                            <li>biometrics — fingerprints, face id, and maybe a retina scanner to make access quick and secure</li>
                             <li>peripherals — mouse, keyboard, monitor, speakers, headphones and all that. may or may not need a 3.5mm jack for headphones and speakers, and make sure the laptop has enough usb type A or type C ports for the extra shii. if u have no idea what i just said, click <a href="https://www.indeed.com/career-advice/career-development/types-of-computer-ports">here</a></li>
                         </ul>
             </ul>
@@ -246,6 +277,10 @@
             <h3 id="summary">Quick Summary</h3>
                 <p><strong>minimum specs: </strong>i5/Ryzen 5, 256 GB NVMe PCIe 3.0, 8 GB DDR4</p>
                 <p>Higher numbers for pretty much everything are usually better but more expensive</p>
+            
+            <img src="https://media.tenor.com/tUdobDq_mp0AAAAd/low-tier-god.gif" alt="love yourself <3, actually kys">
+            <h2 id="recs">Recommended Laptops</h2>
+                <p>I spent all this time sharing my knowledge for u to just completely ignore it and go the easy route. cool. but i'm in the process of tryna get commission off the amazon links but that hasn't happened yet</p>
     </main>
 
     <footer>®not a real Copyright 2023<br>ik this website ugly as shit but tbf i literally coded the whole thing from scratch in like 2 weeks like ion do that easy prebuilt website maker pussy shit ya feel me? i got absolutely nothing better to do in my free time i need actual normal hobbies and shit and maybe a job or im gonna kms (<strong>k</strong>ill that <strong>m</strong>f <strong>s</strong>am)</footer>
